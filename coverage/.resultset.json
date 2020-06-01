@@ -1,7 +1,32 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/Student/Desktop/Tristan_Makers/week4/day1/bookmark_manager1/spec/feature/bookmarks_spec.rb": {
+      "/Users/alastairsumner/Projects/bookmark_manager1/spec/bookmark_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/alastairsumner/Projects/bookmark_manager1/lib/bookmark.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/alastairsumner/Projects/bookmark_manager1/spec/feature/bookmarks_spec.rb": {
         "lines": [
           1,
           null,
@@ -13,7 +38,7 @@
           null
         ]
       },
-      "/Users/Student/Desktop/Tristan_Makers/week4/day1/bookmark_manager1/spec/feature/index_spec.rb": {
+      "/Users/alastairsumner/Projects/bookmark_manager1/spec/feature/index_spec.rb": {
         "lines": [
           null,
           null,
@@ -26,6 +51,6 @@
         ]
       }
     },
-    "timestamp": 1591020236
+    "timestamp": 1591022918
   }
 }
