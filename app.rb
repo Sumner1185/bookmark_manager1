@@ -1,9 +1,10 @@
 # frozen_string_literal: true
 
 require 'sinatra/base'
+require_relative './lib/bookmark'
 
 # bookmark class
-class Bookmark < Sinatra::Base
+class BookmarkManager < Sinatra::Base
   enable :sessions
 
   get '/' do
@@ -11,6 +12,7 @@ class Bookmark < Sinatra::Base
   end
 
   get '/bookmarks' do
-    "google"
+    @bookmarks = Bookmark.all
+    erb(:bookmarks)
   end
 end
