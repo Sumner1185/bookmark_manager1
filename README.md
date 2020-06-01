@@ -9,5 +9,8 @@ I would like to view all of my saved bookmarks
 ```
 
 ## Domain Model Diagram
-
-![Diagram 1](https://github.com/Sumner1185/bookmark_manager1/blob/master/diagrams/domain_model1)
+<br>
+<p align="center">
+  <img src="https://github.com/Sumner1185/bookmark_manager1/blob/master/diagrams/user_story1.png" width="50%">
+  <br><br>
+ Diagram for first user story
