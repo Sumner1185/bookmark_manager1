@@ -8,6 +8,8 @@ require 'simplecov-console'
 
 require_relative '../app'
 
+ENV['ENVIRONMENT'] = 'test'
+
 Capybara.app = BookmarkManager
 
 SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
