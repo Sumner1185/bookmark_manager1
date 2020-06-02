@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+ENV['ENVIRONMENT'] = 'test'
 
 require 'capybara/rspec'
 require 'capybara'
@@ -8,7 +9,6 @@ require 'simplecov-console'
 
 require_relative '../app'
 
-ENV['ENVIRONMENT'] = 'test'
 
 Capybara.app = BookmarkManager
 
