@@ -1,14 +1,20 @@
 # frozen_string_literal: true
-ENV['ENVIRONMENT'] = 'test'
 
 require 'capybara/rspec'
 require 'capybara'
 require 'sinatra'
 require 'simplecov'
 require 'simplecov-console'
-
 require_relative '../app'
+require_relative './setup_test_database'
 
+ENV['RACK_ENV'] = 'test'
+
+RSpec.configure do |config|
+  config.before(:each) do
+    setup_test_database
+  end
+end
 
 Capybara.app = BookmarkManager
 
