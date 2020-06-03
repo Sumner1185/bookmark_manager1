@@ -4,12 +4,27 @@
       "/Users/alastairsumner/Projects/bookmark_manager1/spec/bookmark_spec.rb": {
         "lines": [
           1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
           null,
           1,
           null,
           1,
           1,
           1,
+          0,
+          0,
+          null,
+          null,
+          null,
+          1,
           1,
           1,
           1,
@@ -21,15 +36,17 @@
           null,
           null,
           null,
+          null
+        ]
+      },
+      "/Users/alastairsumner/Projects/bookmark_manager1/spec/database_helpers.rb": {
+        "lines": [
           1,
-          1,
           null,
           1,
-          null,
-          1,
-          null,
-          null,
-          null,
+          0,
+          0,
+          0,
           null
         ]
       },
@@ -44,9 +61,8 @@
           null,
           1,
           1,
-          1,
-          1,
-          1,
+          0,
+          0,
           null,
           null,
           1,
@@ -54,6 +70,8 @@
           1,
           1,
           1,
+          1,
+          null,
           1,
           null,
           null,
@@ -73,6 +91,6 @@
         ]
       }
     },
-    "timestamp": 1591196873
+    "timestamp": 1591203689
   }
 }
