@@ -14,9 +14,6 @@ feature 'Bookmark page' do
   end
 
   scenario 'adds a bookmark to the list' do
-    # connection = PG.connect(dbname: 'bookmark_manager_test')
-    # connection.exec("INSERT INTO bookmarks (url) VALUES ('http://www.testsite.com');")
-
     visit("/")
     click_link("Add Bookmark")
     fill_in "url", with: "http://www.testsite.com"
