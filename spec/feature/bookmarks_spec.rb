@@ -7,9 +7,17 @@ feature 'Bookmark page' do
       connection.exec("INSERT INTO bookmarks (url) VALUES ('http://www.destroyallsoftware.com');")
 
     visit("/")
-    click_link("view all bookmarks")
+    click_link("View All Bookmarks")
     expect(page).to have_content("http://www.makersacademy.com")
     expect(page).to have_content("http://www.google.com")
     expect(page).to have_content("http://www.destroyallsoftware.com")
   end
+
+  scenario 'adds a bookmark to the list' do
+    visit("/")
+    click_link("Add Bookmark")
+    fill_in "url", with: "http://www.testsite.com"
+    expect(page).to have_content("http://www.testsite.com")
+  end
+
 end

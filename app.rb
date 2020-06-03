@@ -15,4 +15,12 @@ class BookmarkManager < Sinatra::Base
     @bookmarks = Bookmark.all
     erb(:bookmarks)
   end
+
+  get '/add-bookmark' do
+    erb(:add_bookmark)
+  end
+
+  post '/save-bookmarks' do
+    redirect '/bookmarks'
+  end
 end
