@@ -8,8 +8,7 @@ class Bookmark
     else
       connection = PG.connect :dbname => 'bookmark_manager'
     end
-    result = connection.exec("SELECT * FROM bookmarks")
-    result.map { |bookmark| bookmark['url'] }
+    connection.exec("SELECT url, title FROM bookmarks")
   end
 
   def self.create(url:)
