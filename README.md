@@ -1,4 +1,4 @@
-# bookmark_manager1
+# Bookmark Manager
 
 ## User stories
 
