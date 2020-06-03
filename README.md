@@ -7,6 +7,11 @@ As a user
 So that I can see all my bookmarks
 I would like to view all of my saved bookmarks
 ```
+```
+As a user
+So that I can save my favourite bookmarks
+I would like to add a bookmark to my list
+```
 
 ## Domain Model Diagram
 <br>
