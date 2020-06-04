@@ -13,12 +13,12 @@ feature 'Bookmark page' do
 
   scenario 'adds a bookmark to the list' do
     visit('/')
-    click_link("Add Bookmark")
-    fill_in("url", with: "http://www.testsite.com")
-    fill_in('title', with: 'Test Bookmark')
-    click_button("Add URL")
+    click_link('Add Bookmark')
+    fill_in('url', with: 'http://www.testsite.com')
+    fill_in('title', with: 'Test')
+    click_button('Add URL')
 
-    expect(page).to have_link('Test Bookmark', href: 'http://www.testsite.com')
+    expect(page).to have_link('Test', href: 'http://www.testsite.com')
   end
 
 end
