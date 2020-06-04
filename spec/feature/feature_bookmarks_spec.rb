@@ -1,3 +1,5 @@
+require 'web_helper'
+
 feature 'Bookmark page' do
 
   scenario 'shows all bookmarks to user' do
@@ -12,13 +14,17 @@ feature 'Bookmark page' do
   end
 
   scenario 'adds a bookmark to the list' do
-    visit('/')
-    click_link('Add Bookmark')
-    fill_in('url', with: 'http://www.testsite.com')
-    fill_in('title', with: 'Test')
-    click_button('Add URL')
+    add_test_bookmark_to_list
 
     expect(page).to have_link('Test', href: 'http://www.testsite.com')
+  end
+
+  scenario 'deletes a bookmark from the list' do
+    add_test_bookmark_to_list
+    click_link('Delete Bookmark')
+    fill_in('title', with: 'Test')
+    
+    expect(page).not_to have_link('Test', href: 'http://www.testsite.com')
   end
 
 end
