@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/katiemcdonagh/w4.5/bookmark_manager1/spec/bookmark_spec.rb": {
+      "/Users/alastairsumner/Projects/bookmark_manager1/spec/bookmark_spec.rb": {
         "lines": [
           1,
           1,
@@ -20,7 +20,19 @@
           1,
           1,
           1,
-          0,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
           null,
           null,
           null,
@@ -30,16 +42,13 @@
           1,
           null,
           1,
-          1,
-          1,
-          0,
           null,
           null,
           null,
           null
         ]
       },
-      "/Users/katiemcdonagh/w4.5/bookmark_manager1/spec/database_helpers.rb": {
+      "/Users/alastairsumner/Projects/bookmark_manager1/spec/database_helpers.rb": {
         "lines": [
           1,
           null,
@@ -50,13 +59,11 @@
           null
         ]
       },
-      "/Users/katiemcdonagh/w4.5/bookmark_manager1/spec/feature/feature_bookmarks_spec.rb": {
+      "/Users/alastairsumner/Projects/bookmark_manager1/spec/feature/feature_bookmarks_spec.rb": {
         "lines": [
           1,
           null,
           1,
-          null,
-          1,
           1,
           1,
           1,
@@ -69,6 +76,7 @@
           null,
           1,
           1,
+          1,
           null,
           1,
           null,
@@ -76,26 +84,16 @@
           1,
           1,
           1,
-          0,
+          1,
           null,
-          0,
+          1,
+          1,
           null,
           null,
           null
         ]
       },
-      "/Users/katiemcdonagh/w4.5/bookmark_manager1/spec/web_helper.rb": {
-        "lines": [
-          1,
-          2,
-          2,
-          2,
-          2,
-          2,
-          null
-        ]
-      },
-      "/Users/katiemcdonagh/w4.5/bookmark_manager1/spec/feature/index_spec.rb": {
+      "/Users/alastairsumner/Projects/bookmark_manager1/spec/feature/index_spec.rb": {
         "lines": [
           null,
           null,
@@ -108,6 +106,6 @@
         ]
       }
     },
-    "timestamp": 1591282960
+    "timestamp": 1591285539
   }
 }
