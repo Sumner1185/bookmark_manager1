@@ -6,7 +6,7 @@ feature 'Bookmark page' do
       Bookmark.create(url: 'http://www.destroyallsoftware.com', title: 'Destroy All Software')
 
     visit("/bookmarks")
-    
+
     expect(page).to have_link('Makers Academy', href: 'http://www.makersacademy.com')
     expect(page).to have_link('Destroy All Software',  href: 'http://www.destroyallsoftware.com')
     expect(page).to have_link('Google', href: 'http://www.google.com')
@@ -26,6 +26,21 @@ feature 'Bookmark page' do
 
     expect(current_path).to eq '/bookmarks'
     expect(page).not_to have_link('Test', href: 'http://www.testsite.com')
+  end
+
+  scenario 'updates a bookmark' do
+    bookmark = Bookmark.create(url: 'http://www.restsite.com', title: 'Rest')
+    visit('/bookmarks')
+    first('.bookmark').click_button 'Update'
+    expect(current_path).to eq "/bookmarks/#{bookmark.id}/edit"
+    fill_in('title', with: 'Test')
+    fill_in('url', with: 'http://www.testsite.com')
+    click_button('Submit')
+
+    expect(current_path).to eq '/bookmarks'
+    expect(page).to have_link('Test', href: 'http://www.testsite.com')
+    expect(page).not_to have_link('Rest', href: 'http://www.restsite.com')
+
   end
 
 end

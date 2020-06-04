@@ -3,10 +3,13 @@
     <li class="bookmark" id="bookmark-<%= bookmark.id %>">
       <a href="<%= bookmark.url %>" target="_blank">
         <%= bookmark.title %>
-      </a>
+      </a><br>
       <form action="/bookmarks/<%= bookmark.id %>" method="post">
         <input type='hidden' name='_method' value='DELETE'/>
         <input type="submit" value="Delete" />
+      </form>
+      <form action="/bookmarks/<%= bookmark.id %>/edit" method="get">
+          <input type="submit" value="Update" />
       </form>
     </li>
   <% end %>
