@@ -21,9 +21,9 @@ feature 'Bookmark page' do
 
   scenario 'deletes a bookmark from the list' do
     add_test_bookmark_to_list
-    click_link('Delete Bookmark')
+    click_button('Delete Bookmark')
     fill_in('title', with: 'Test')
-    
+
     expect(page).not_to have_link('Test', href: 'http://www.testsite.com')
   end
 
